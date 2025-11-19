@@ -1,0 +1,8 @@
+torch
+torch_geometric
+langchain
+langchain_openai
+langgraph
+networkx
+pandas
+numpy
