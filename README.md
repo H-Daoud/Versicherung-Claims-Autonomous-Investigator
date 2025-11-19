@@ -19,7 +19,20 @@ The system utilizes a Multi-Agent workflow:
 * **Fraud Detection:** Detects organized fraud rings that standard tabular models miss.
 * **Explainability:** Provides a "Chain of Thought" reasoning, not just a probability score.
 
+ASCCII Tree Diagram
+│
+├── .gitignore
+├── LICENSE
+├── README.md
+├── eslint.config.js
+├── index.html
+├── package.json
+├── package-lock.json
+├── vite.config.js
+
 ## Project Structure
+
+
 claims-autonomous-investigator/
 │
 ├── data/
