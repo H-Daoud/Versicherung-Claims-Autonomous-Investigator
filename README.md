@@ -18,38 +18,3 @@ The system utilizes a Multi-Agent workflow:
 ## 📉 Business Impact
 * **Fraud Detection:** Detects organized fraud rings that standard tabular models miss.
 * **Explainability:** Provides a "Chain of Thought" reasoning, not just a probability score.
-
-ASCCII Tree Diagram
-│
-├── .gitignore
-├── LICENSE
-├── README.md
-├── eslint.config.js
-├── index.html
-├── package.json
-├── package-lock.json
-├── vite.config.js
-
-## Project Structure
-
-
-claims-autonomous-investigator/
-│
-├── data/
-│   ├── synthetic_graph_data.py    # Generates Knowledge Graph (Claims, People, Shops)
-│   └── policy_docs.txt            # Mock insurance policy text for RAG
-│
-├── models/
-│   └── gnn_fraud_detector.py      # PyTorch Geometric model (The "Detective")
-│
-├── agents/
-│   ├── detective_agent.py         # Wraps the GNN model
-│   ├── lawyer_agent.py            # Handles RAG / Policy lookup
-│   └── judge_agent.py             # LangGraph Orchestrator (The final decision)
-│
-├── notebooks/
-│   └── prototype_demo.ipynb       # Jupyter notebook for visual demo
-│
-├── main.py                        # Main entry point to run the system
-├── requirements.txt               # Dependencies (torch, torch_geometric, langchain, etc.)
-└── README.md                      # The most important file!
