@@ -1,1 +1,14 @@
-Policy Document: Comprehensive Car Insurance v2024
+Policy Document: Comprehensive Car Insurance v2025
+INSURANCE POLICY ID: HUK-AUTO-2025
+
+SECTION 1: COVERAGE
+1.1 Collision Coverage: We cover damage to your vehicle caused by a collision with another vehicle or object.
+1.2 Theft: We cover loss due to theft, provided the vehicle was locked.
+
+SECTION 2: EXCLUSIONS
+2.1 Commercial Use: Coverage is VOID if the vehicle is used for unregistered commercial purposes (e.g., delivery, ride-share).
+2.2 Unlicensed Driver: No coverage if the driver does not hold a valid license.
+2.3 Late Reporting: Incidents must be reported within 24 hours of occurrence.
+
+SECTION 3: FRAUD
+3.1 Any misrepresentation of facts will result in immediate claim denial and potential legal action.

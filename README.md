@@ -43,4 +43,21 @@ claims-autonomous-investigator/
 │
 ├── main.py                        # Main entry point to run the system
 ├── requirements.txt               # Dependencies (torch, torch_geometric, langchain, etc.)
-└── README.md                      # The most important file!
+└── README.md                      # The most important file
+
+``mermaid
+graph TD
+    A[Incoming Claim] --> B(Orchestrator)
+    B --> C{Detective Agent}
+    B --> D{Lawyer Agent}
+    
+    C -- "Builds Graph" --> E[(Graph Neural Network)]
+    E -- "Risk Score" --> C
+    
+    D -- "Queries Policy" --> F[(RAG / Policy Docs)]
+    F -- "Coverage Logic" --> D
+    
+    C --> G[Judge Agent]
+    D --> G
+    
+    G -- "Synthesizes Evidence" --> H[Final Verdict]!
