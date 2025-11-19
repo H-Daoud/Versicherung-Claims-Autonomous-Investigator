@@ -19,10 +19,11 @@ The system utilizes a Multi-Agent workflow:
 * **Fraud Detection:** Detects organized fraud rings that standard tabular models miss.
 * **Explainability:** Provides a "Chain of Thought" reasoning, not just a probability score.
 
+## Project Structure
 claims-autonomous-investigator/
 │
 ├── data/
-│   ├── synthetic_graph_data.py    # Generates a fake Knowledge Graph (Claims, People, Shops)
+│   ├── synthetic_graph_data.py    # Generates Knowledge Graph (Claims, People, Shops)
 │   └── policy_docs.txt            # Mock insurance policy text for RAG
 │
 ├── models/
