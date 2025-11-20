@@ -1,10 +1,14 @@
-{
+import json
+import os
+
+# Content of the Notebook cells
+notebook_content = {
  "cells": [
   {
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "# \ud83d\udd75\ufe0f\u200d\u2642\ufe0f Autonomous Claims Investigator: Prototype Demo\n",
+    "# 🕵️‍♂️ Autonomous Claims Investigator: Prototype Demo\n",
     "\n",
     "This notebook demonstrates the **'Detective Agent'** (Graph Neural Network logic) and the **'Compound System'** workflow.\n",
     "\n",
@@ -14,7 +18,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": None,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -39,7 +43,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": None,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -62,8 +66,8 @@
     "\n",
     "    # --- The FRAUD RING (Organized Crime) ---\n",
     "    # Multiple people connected to ONE shady shop and ONE shady doctor\n",
-    "    shady_shop = \"\u26a0\ufe0f BAD_SHOP_99\"\n",
-    "    shady_doc = \"\u26a0\ufe0f BAD_DOC_99\"\n",
+    "    shady_shop = \"⚠️ BAD_SHOP_99\"\n",
+    "    shady_doc = \"⚠️ BAD_DOC_99\"\n",
     "    \n",
     "    G.add_node(shady_shop, type='Shop', color='red')\n",
     "    G.add_node(shady_doc, type='Doctor', color='red')\n",
@@ -99,7 +103,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": None,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -144,7 +148,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": None,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -157,7 +161,7 @@
     "\"\"\"\n",
     "\n",
     "print(f\"--- Analyzing Policy Coverage for: {claim_text} ---\")\n",
-    "print(f\"\ud83d\udd0d RETRIEVED CONTEXT: {policy_context}\")"
+    "print(f\"🔍 RETRIEVED CONTEXT: {policy_context}\")"
    ]
   },
   {
@@ -170,12 +174,12 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": None,
    "metadata": {},
    "outputs": [],
    "source": [
     "final_verdict = \"\"\"\n",
-    "\u2696\ufe0f FINAL DECISION: REJECTED\n",
+    "⚖️ FINAL DECISION: REJECTED\n",
     "\n",
     "REASONING:\n",
     "1. FRAUD DETECTED: Claimant is part of a known fraud ring connected to 'BAD_SHOP_99'. (Confidence: 98%)\n",
@@ -210,3 +214,10 @@
  "nbformat": 4,
  "nbformat_minor": 5
 }
+
+# Write the file
+output_path = os.path.join("notebooks", "prototype_demo.ipynb")
+with open(output_path, "w") as f:
+    json.dump(notebook_content, f, indent=1)
+
+print(f"✅ Successfully filled {output_path}")
